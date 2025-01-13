@@ -89,3 +89,70 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* WIP */
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  display: grid;
+  grid-column: 1 / 3;
+  /* grid-template: 1fr / 1fr 1fr; */
+  grid-template-columns: 1fr 2fr;
+}
+/* .header div {
+  text-align: left;
+} */
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+.menu ul {
+  display: grid;
+  /* grid-template: 1fr 1fr / 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+  grid-row: 2 / 4;
+  /* grid-column: 1 / 2; */
+}
+.side-content,
+.photo {
+  display: grid;
+  align-items: center;
+}
+
+.nav ul {
+  /* grid-column: 2 / 3; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.article {
+  /* grid-column: 2 / 3; */
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+.card {
+  height: 200px;
+}
+
+.footer {
+  grid-column: 1 / 3;
+}
